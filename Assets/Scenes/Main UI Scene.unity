@@ -1425,12 +1425,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsCardLive: 0
   Hop: 0
+  MainCanva: {fileID: 139870847}
   CardToShowA: {fileID: 1042638641}
   CardToShowB: {fileID: 1443439378}
   CardToShowC: {fileID: 856658429}
   CardToShowD: {fileID: 1278968467}
   CardToShowE: {fileID: 1696131271}
   Anim: {fileID: 1014497815}
+  TextoRonda: {fileID: 1973370627}
 --- !u!4 &867340517
 Transform:
   m_ObjectHideFlags: 0

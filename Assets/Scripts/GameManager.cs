@@ -5,13 +5,22 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
+
+    //UI
     [SerializeField] public int RoundNumber;
+    [SerializeField] public int accumulatedPoints;
 
     public Action<List<ActionCard>> OnIntermission;
 
     public Action<int> OnRoundStart;
 
     public List<ActionCard> Cards = new List<ActionCard>();
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
