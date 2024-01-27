@@ -7,19 +7,23 @@ using UnityEngine;
 public class ActionCard : ScriptableObject
 {
 
-    public string name;
+    public string actionName;
 
-    public enum color
-        {
-
-        red,
-        blue,
-        green
-
-    }
+    public Categories category;
 
     public int points;
 
     public Animation animation;
+
+    public Sprite sprite;
+
+    public enum cardType
+    {
+        animation,
+        spawner,
+        ragdoll,
+    }
+
+    public GameObject spawnObject;
 
 }
