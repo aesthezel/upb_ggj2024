@@ -25,9 +25,9 @@ public class RandomNumberPicker : MonoBehaviour
         int RandomNumberChosenB = 0;
         int RandomNumberChosenC = 0;
 
-        RandomNumberChosenA = rnd.Next(1,11);
-        RandomNumberChosenB = rnd.Next(1, 11);
-        RandomNumberChosenC = rnd.Next(1, 11);
+        RandomNumberChosenA = rnd.Next(1,9);
+        RandomNumberChosenB = rnd.Next(1, 9);
+        RandomNumberChosenC = rnd.Next(1, 9);
 
         Debug.Log("numero fue A " + RandomNumberChosenA);
         Debug.Log("numero fue B " + RandomNumberChosenB);
@@ -49,29 +49,21 @@ public class RandomNumberPicker : MonoBehaviour
         if (RandomNumberChosenB == 4) { CardB = "Vuelta SuperMegaHiperUltraEpica"; }
         if (RandomNumberChosenC == 4) { CardC = "Vuelta SuperMegaHiperUltraEpica"; }
 
-        if (RandomNumberChosenA == 5) { CardA = "Encanado"; }
-        if (RandomNumberChosenB == 5) { CardB = "Encanado"; }
-        if (RandomNumberChosenC == 5) { CardC = "Encanado"; }
+        if (RandomNumberChosenA == 5) { CardA = "Me huele la axila"; }
+        if (RandomNumberChosenB == 5) { CardB = "Me huele la axila"; }
+        if (RandomNumberChosenC == 5) { CardC = "Me huele la axila"; }
 
-        if (RandomNumberChosenA == 6) { CardA = "Me huele la axila"; }
-        if (RandomNumberChosenB == 6) { CardB = "Me huele la axila"; }
-        if (RandomNumberChosenC == 6) { CardC = "Me huele la axila"; }
+        if (RandomNumberChosenA == 6) { CardA = "La llamada"; }
+        if (RandomNumberChosenB == 6) { CardB = "La llamada"; }
+        if (RandomNumberChosenC == 6) { CardC = "La llamada"; }
 
-        if (RandomNumberChosenA == 7) { CardA = "La llamada"; }
-        if (RandomNumberChosenB == 7) { CardB = "La llamada"; }
-        if (RandomNumberChosenC == 7) { CardC = "La llamada"; }
+        if (RandomNumberChosenA == 7) { CardA = "Oh no :("; }
+        if (RandomNumberChosenB == 7) { CardB = "Oh no :("; }
+        if (RandomNumberChosenC == 7) { CardC = "Oh no :("; }
 
-        if (RandomNumberChosenA == 8) { CardA = "Oh no :("; }
-        if (RandomNumberChosenB == 8) { CardB = "Oh no :("; }
-        if (RandomNumberChosenC == 8) { CardC = "Oh no :("; }
-
-        if (RandomNumberChosenA == 9) { CardA = "Comodin"; }
-        if (RandomNumberChosenB == 9) { CardB = "Comodin"; }
-        if (RandomNumberChosenC == 9) { CardC = "Comodin"; }
-
-        if (RandomNumberChosenA == 10) { CardA = "Pasta de Tomate"; }
-        if (RandomNumberChosenB == 10) { CardB = "Pasta de Tomate"; }
-        if (RandomNumberChosenC == 10) { CardC = "Pasta de Tomate"; }
+        if (RandomNumberChosenA == 8) { CardA = "Pasta de Tomate"; }
+        if (RandomNumberChosenB == 8) { CardB = "Pasta de Tomate"; }
+        if (RandomNumberChosenC == 8) { CardC = "Pasta de Tomate"; }
 
 
         Debug.Log("Carta A " + CardA);

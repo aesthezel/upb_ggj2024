@@ -1,9 +1,11 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ButtonUI : MonoBehaviour
 {
@@ -12,11 +14,17 @@ public class ButtonUI : MonoBehaviour
     public bool IsCardLive = false;
     public bool Hop = true;
 
+    public GameObject MainCanva;
+
     public GameObject CardToShowA;
     public GameObject CardToShowB;
     public GameObject CardToShowC;
     public GameObject CardToShowD;
     public GameObject CardToShowE;
+    public GameObject Anim;
+
+    int round = 0;
+    public TextMeshProUGUI  TextoRonda;
 
     public void Q()
     {
@@ -130,9 +138,17 @@ public class ButtonUI : MonoBehaviour
         Hop = false;
     }
 
-    public void Back()
+    public void PlayAnim()
     {
-        CardToShowA.SetActive(false);
+        Anim.SetActive(true);
+        MainCanva.SetActive(false);
+
+    }
+
+    public void PasarRonda()
+    {
+        round++;
+        TextoRonda.text = round.ToString();
     }
 
 
