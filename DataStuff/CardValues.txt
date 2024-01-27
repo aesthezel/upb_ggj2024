@@ -1,0 +1,38 @@
+Card List:
+
+Sacar un pollo "Pollificacion"
+Hacer un Ragdoll "Alt f4"
+Yunque Drop "Lluvia pesada"
+Backflip "Vuelta SuperMegaHiperUltraEpica"
+Mimo "Encanado"
+Dab "Me huele la axila"
+Bailar "La llamada"
+CaÑon "Oh no :("
+Comodin "???"
+Lanzar Tomate "Pasta de Tomate"
+
+CLASIFICACION DE ACCIONES
+
+Absurdas -> Pollo/Dab/Tomate
+
+Impresionante -> Mimo/Bailar/Backflip
+
+Golpe -> CaÑon/Yunque/Ragdoll
+
+COMODIN****
+
+PUNTAJE POR ACCION
+
+Dab = 1
+Pollo = 2
+Tomate = 3
+
+Bailar = 1
+Mimo = 2
+Backflip = 3
+
+Yunque = 1
+Ragdoll = 2
+Cañon = 3
+
+
