@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -27,5 +28,7 @@ public class ActionCard : ScriptableObject
     public CardType cardType;
 
     public GameObject spawnObject;
+
+    
 
 }
