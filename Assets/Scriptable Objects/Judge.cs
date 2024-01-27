@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Judge : ScriptableObject
 {
-    
-    public string name
+
+    public string name;
 
 
 }
