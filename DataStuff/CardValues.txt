@@ -4,20 +4,20 @@ Sacar un pollo "Pollificacion"
 Hacer un Ragdoll "Alt f4"
 Yunque Drop "Lluvia pesada"
 Backflip "Vuelta SuperMegaHiperUltraEpica"
-Mimo "Encanado"
 Dab "Me huele la axila"
 Bailar "La llamada"
 CaÑon "Oh no :("
-Comodin "???"
 Lanzar Tomate "Pasta de Tomate"
 
 CLASIFICACION DE ACCIONES
 
-Absurdas -> Pollo/Dab/Tomate
+Absurdas -> Pollo/Tomate
 
-Impresionante -> Mimo/Bailar/Backflip
+Impresionante -> Bailar/Backflip
 
-Golpe -> CaÑon/Yunque/Ragdoll
+Golpe -> Cañon/Yunque/
+
+XD -> Ragdoll/Dab
 
 COMODIN****
 
