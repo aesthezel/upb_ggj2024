@@ -5,7 +5,10 @@ using UnityEngine;
 public class Judge : ScriptableObject
 {
 
-    public string name;
+    public string judgeName;
 
+    public Categories baseCategorie;
+
+    public Sprite sprite;
 
 }
