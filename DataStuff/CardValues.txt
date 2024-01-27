@@ -35,4 +35,17 @@ Yunque = 1
 Ragdoll = 2
 Cañon = 3
 
+Card Template:
 
+*************************
+*			*
+*			*
+*	Imagen		*
+*	de accion	*
+*			*
+*			*
+*    "Nombre accion"	*	
+*			*
+*			*
+*			*
+*************************
