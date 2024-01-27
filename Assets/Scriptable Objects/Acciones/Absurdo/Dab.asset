@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f12414f5b03e0141b828b9bb7390543, type: 3}
-  m_Name: Pollificacion
+  m_Name: Dab
   m_EditorClassIdentifier: 
-  actionName: Pollificacion
+  actionName: Chuchiento
   category: {fileID: 0}
   points: 0
   animation: {fileID: 0}
