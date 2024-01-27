@@ -43,6 +43,8 @@ public class ActionSlot : MonoBehaviour
         if (this.actionCard != null)
         {
             AbilitieManager.instance.AbilitieUsed(actionCard);
+
+            GameManager.instance.accumulatedPoints += actionCard.points;
         }
     }
 
