@@ -32,6 +32,7 @@ public class SoundDataBank : ScriptableObject
     [SerializeField] AudioClip ButtonSFX = default;
     [SerializeField] AudioClip GameOverJingle = default;
     [SerializeField] AudioClip WinningJingle = default;
+    [SerializeField] AudioClip ElevatorMusic = default;
     [SerializeField] AudioClip DefaultSound = default;
 
     public AudioClip GetFromDataBank(AudioManager.AudioSamples samples) => samples switch
@@ -64,6 +65,7 @@ public class SoundDataBank : ScriptableObject
         AudioManager.AudioSamples.buttonSFX=> ButtonSFX,
         AudioManager.AudioSamples.gameOverJingle=> GameOverJingle,
         AudioManager.AudioSamples.winningJingle=> WinningJingle,
+        AudioManager.AudioSamples.elevatorMusic => ElevatorMusic,
         _ => DefaultSound
     };
 

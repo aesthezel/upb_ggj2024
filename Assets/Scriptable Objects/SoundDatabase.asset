@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f624bd49876eb3f4da84c7d0b65ae0cd, type: 3}
+  m_Name: SoundDatabase
+  m_EditorClassIdentifier: 
+  MainTheme: {fileID: 8300000, guid: 1883215f7b718ae4cbabc542c6132775, type: 3}
+  HappyNun: {fileID: 8300000, guid: 6e6c1116c1c6dda44bc33dc3f8fd6212, type: 3}
+  PokerNun: {fileID: 8300000, guid: 9860fc55e31ec3b4e937de824ad9235c, type: 3}
+  UpsetNun: {fileID: 8300000, guid: 658b58263739fd44a951ba48b66ea4db, type: 3}
+  HappyDepressed: {fileID: 8300000, guid: 2db88c1a2f703c7448b436d1c4ee8dcc, type: 3}
+  PokerDepressed: {fileID: 8300000, guid: 6aafbffab42bcff4f8059b8b1181e45f, type: 3}
+  UpsetDepressed: {fileID: 8300000, guid: 95e23bfac0cf2274e83a1aef47efe84b, type: 3}
+  HappyNarco: {fileID: 8300000, guid: 969b5abec39fbdf4e9723f7285b00765, type: 3}
+  PokerNarco: {fileID: 8300000, guid: 7accc00cc3b41e44d9e4f24777c9095a, type: 3}
+  UpsetNarco: {fileID: 8300000, guid: 0a09939022a8c8a45b82838f53f6cb80, type: 3}
+  LaughingAudience: {fileID: 8300000, guid: 5371a7343d3be1f4cb86db7a911eccd5, type: 3}
+  BackGroundGameplayMusic: {fileID: 8300000, guid: 4b944c5b2e7160e439ea979a04568228,
+    type: 3}
+  CannonShot: {fileID: 8300000, guid: 7a3e0b976f088364096df7ef21a072ce, type: 3}
+  FallingAnvil: {fileID: 8300000, guid: 232efc045992d554a978b091b9461759, type: 3}
+  AnvilHit: {fileID: 8300000, guid: f252acf75aa6d6c4d85de1558731089d, type: 3}
+  HittingTheFloor: {fileID: 8300000, guid: 111d5d8c6a0b4ad4a832890ab66925e2, type: 3}
+  DabHorns: {fileID: 8300000, guid: 402c61a6b09337d4a81556df95fe5db1, type: 3}
+  FlyingTomato: {fileID: 8300000, guid: da44bd275dd46804581cef4d91a52689, type: 3}
+  TomatoSplash: {fileID: 8300000, guid: ed30c94a6d7b4744596c00ca1d51fefa, type: 3}
+  SurpriseChicken: {fileID: 8300000, guid: f1d077c8f2fdd2c46b4c265a0c298ff2, type: 3}
+  FrenchMime: {fileID: 8300000, guid: f176f5a2912d69449a47842655ed2937, type: 3}
+  ActionSelected1: {fileID: 8300000, guid: dbf6bb4573cff814d83d2349f3e9cfaf, type: 3}
+  ActionSelected2: {fileID: 8300000, guid: eb33bd3276f7e2d45a8cf7fe0dabd0e1, type: 3}
+  ActionSelected3: {fileID: 8300000, guid: d6e01b7e282f6bb40a6e4cdeac86334b, type: 3}
+  MouseOver: {fileID: 8300000, guid: 95454b89186d95649b35ca49a8c7d358, type: 3}
+  ButtonSFX: {fileID: 8300000, guid: d929ea543dc0c0945ae61e3cafe851c4, type: 3}
+  GameOverJingle: {fileID: 0}
+  WinningJingle: {fileID: 8300000, guid: 63f47b0a2803827418acca360c1874bd, type: 3}
+  ElevatorMusic: {fileID: 8300000, guid: 8191ff215cb58a142b7bf7da9f834005, type: 3}
+  DefaultSound: {fileID: 8300000, guid: f1d077c8f2fdd2c46b4c265a0c298ff2, type: 3}
