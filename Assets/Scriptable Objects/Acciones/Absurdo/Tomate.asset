@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Tomate
   m_EditorClassIdentifier: 
   actionName: Napolitana
-  category: {fileID: 0}
+  category: {fileID: 11400000, guid: 5a1b25e681780d6419f88fd18d7ec787, type: 2}
   points: 0
   animation: {fileID: 0}
   sprite: {fileID: 0}
+  cardType: 0
   spawnObject: {fileID: 0}
