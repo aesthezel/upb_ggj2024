@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static ActionCard;
@@ -9,11 +10,11 @@ public class ActionSlot : MonoBehaviour
 
     public int id;
 
-    [SerializeField] Text nameCard;
+    [SerializeField] TextMeshProUGUI nameCard;
 
-    [SerializeField] Text points;
+    [SerializeField] TextMeshProUGUI points;
 
-    [SerializeField] Sprite sprite;
+    [SerializeField] Image sprite;
 
     [SerializeField] Categories categorie;
 
@@ -28,14 +29,21 @@ public class ActionSlot : MonoBehaviour
     {
         if (id == this.id)
         {
+            Debug.Log("Abilitie Changed");
             nameCard.text = actionCard.actionName;
             points.text = actionCard.points.ToString();
-            sprite = actionCard.sprite;
+            sprite.sprite = actionCard.sprite;
             categorie = actionCard.category;
             this.actionCard = actionCard;
         }
-        
+    }
 
+    public void PerformAction()
+    {
+        if (this.actionCard != null)
+        {
+            AbilitieManager.instance.AbilitieUsed(actionCard);
+        }
     }
 
 }

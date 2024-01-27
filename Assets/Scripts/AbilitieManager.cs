@@ -9,7 +9,18 @@ public class AbilitieManager : MonoBehaviour
 
     public Action<int, ActionCard> OnAbilitieChanged;
 
-    public void AssignAbilitie(ActionCard actionCard, Action abilitie, int abilitieNumber)
+    public Action<ActionCard> OnActionPerformAnim, OnActionPerformSpawn, OnActionPerformRagdoll;
+
+    public GameObject Player;
+
+    [SerializeField] ActionCard testAction;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    public void AssignAbilitie(ActionCard actionCard, int abilitieNumber)
     {
         switch (abilitieNumber)
         {
@@ -35,5 +46,32 @@ public class AbilitieManager : MonoBehaviour
     {
         if (OnAbilitieChanged != null) OnAbilitieChanged(id, actionCard);
     }
+
+    public void AbilitieUsed(ActionCard actionCard)
+    {
+        switch (actionCard.cardType) {
+            case ActionCard.CardType.animation:
+                Debug.Log("Entro");
+                if (OnActionPerformAnim != null) OnActionPerformAnim(actionCard);
+                break;
+            case ActionCard.CardType.spawner: 
+                if (OnActionPerformSpawn != null) OnActionPerformSpawn(actionCard);
+                break;
+            case ActionCard.CardType.ragdoll:
+                if (OnActionPerformRagdoll!= null) OnActionPerformRagdoll(actionCard);
+                break;
+
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            AssignAbilitie(testAction, 1);
+        }
+    }
+
+    
 
 }
