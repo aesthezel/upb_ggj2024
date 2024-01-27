@@ -29,10 +29,10 @@ public class ActionSlot : MonoBehaviour
     {
         if (id == this.id)
         {
-            Debug.Log("Abilitie Changed");
+            /*Debug.Log("Abilitie Changed");
             nameCard.text = actionCard.actionName;
             points.text = actionCard.points.ToString();
-            sprite.sprite = actionCard.sprite;
+            sprite.sprite = actionCard.sprite;*/
             categorie = actionCard.category;
             this.actionCard = actionCard;
         }

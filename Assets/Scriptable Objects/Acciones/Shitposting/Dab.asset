@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f12414f5b03e0141b828b9bb7390543, type: 3}
-  m_Name: Comodin
+  m_Name: Dab
   m_EditorClassIdentifier: 
-  actionName: 
-  category: {fileID: 0}
+  actionName: Chuchiento
+  category: {fileID: 11400000, guid: 1d2c7839a983d884c80c1eeb03fa8231, type: 2}
   points: 0
   animation: {fileID: 0}
   sprite: {fileID: 0}
+  cardType: 0
   spawnObject: {fileID: 0}
