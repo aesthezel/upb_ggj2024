@@ -8,7 +8,7 @@ public class StartButtonScripts : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void ExitGame()
@@ -19,7 +19,7 @@ public class StartButtonScripts : MonoBehaviour
 
     public void Credits()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
 
