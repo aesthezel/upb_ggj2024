@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 public static class CategoryFormula
 {
@@ -16,7 +17,7 @@ public static class CategoryFormula
             }
             else
             {
-                if (lastCategory.AdjecentCategory == action.category.AdjecentCategory)
+                if (lastCategory == action.category.AdjecentCategory)
                 {
                     total -= action.points;
                 }
@@ -28,5 +29,11 @@ public static class CategoryFormula
         }
 
         return total;
+    }
+
+    public static bool CalculateIsGoodOrBad([CanBeNull] ActionCard lastActionCard, ActionCard currentActionCard)
+    {
+        if (lastActionCard == null) return true;
+        return lastActionCard.category != currentActionCard.category.AdjecentCategory;
     }
 }

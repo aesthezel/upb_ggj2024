@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Green
   m_EditorClassIdentifier: 
   CategoryName: Impresionante
+  AdjecentCategory: {fileID: 11400000, guid: 1d2c7839a983d884c80c1eeb03fa8231, type: 2}
   color: {r: 0.11273051, g: 0.8415094, b: 0.16074546, a: 1}
