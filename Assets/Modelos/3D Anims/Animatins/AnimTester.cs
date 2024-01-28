@@ -5,7 +5,8 @@ using UnityEngine;
 public class AnimTester : MonoBehaviour
 {
 
-     Animator AnimatorTest;
+    Animator AnimatorTest;
+    public string nameOfAction = " ";
 
     void Awake()
     {
@@ -16,27 +17,48 @@ public class AnimTester : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Keypad1))
         {
-            print("Backflip");
-            AnimatorTest.SetBool("Backflip", true);
-
-            StartCoroutine(WaitSeconds(3, AnimatorTest));
-
-            
+            //YA QUEDO
+            nameOfAction = "Backflip";
+            AnimatorTest.SetBool(nameOfAction, true);
+            StartCoroutine(WaitSeconds(3, AnimatorTest, "Backflip"));
         }
-        
+        if (Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            //AAA
+            nameOfAction = "RagDoll";
+            AnimatorTest.SetBool(nameOfAction, true);
+            StartCoroutine(WaitSeconds(3, AnimatorTest, "RagDoll"));
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            //found
+            nameOfAction = "Iron";
+            AnimatorTest.SetBool(nameOfAction, true);
+            StartCoroutine(WaitSeconds(3, AnimatorTest, "Iron"));
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad4))
+        {
+            //AAA
+            nameOfAction = "Dab";
+            AnimatorTest.SetBool(nameOfAction, true);
+            StartCoroutine(WaitSeconds(3, AnimatorTest, "Dab"));
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad5))
+        {
+            //Dance DONE
+            nameOfAction = "Dance";
+            AnimatorTest.SetBool(nameOfAction, true);
+            StartCoroutine(WaitSeconds(4, AnimatorTest, "Dance"));
+        }
+
+
     }
 
-    public static IEnumerator WaitSeconds(int seconds, Animator animator)
+    public static IEnumerator WaitSeconds(int seconds, Animator animator, string nameOfAction)
     {
         yield return new WaitForSeconds(seconds);
-
-        bool Extra = animator.GetBool("Backflip");
-        animator.SetBool("Backflip", false);
-        print(animator);
-        Debug.Log(Extra);
-
-
+        animator.SetBool(nameOfAction, false);
     }
 }
