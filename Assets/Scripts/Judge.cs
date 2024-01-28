@@ -7,7 +7,7 @@ public class Judge : ScriptableObject
 
     public string judgeName;
 
-    public Categories baseCategorie;
+    public Category baseCategorie;
 
     public Sprite sprite;
 
