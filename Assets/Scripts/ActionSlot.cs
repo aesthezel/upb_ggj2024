@@ -20,7 +20,7 @@ public class ActionSlot : MonoBehaviour
 
     [SerializeField] Image Card;
 
-    [SerializeField] Categories categorie;
+    [SerializeField] Category categorie;
 
     [SerializeField] ActionCard actionCard;
 

@@ -10,7 +10,7 @@ public class ActionCard : ScriptableObject
 
     public string actionName;
 
-    [FormerlySerializedAs("category")] public Category category;
+    public Category category;
 
     public int points;
 
