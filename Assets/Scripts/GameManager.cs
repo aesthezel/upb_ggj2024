@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using TMPro;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,8 +31,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-
-        OnIntermission += Selectedcards;
+        //OnIntermission += Selectedcards;
 
         switch (RoundNumber)
         {
@@ -48,8 +48,6 @@ public class GameManager : MonoBehaviour
                 if (OnIntermission != null) OnIntermission(5);
                 break;
         }
-
-        
         
         if (RoundNumber < 3) RoundNumber++;
     }
@@ -85,16 +83,17 @@ public class GameManager : MonoBehaviour
         AddAbilities(choosenCards);
         //-----------------------------------------------------------------------------------------------
         ChoseenCardsList = choosenCards;
-
-        UnityEngine.Debug.Log(choosenCards);
     }
 
     public void AddAbilities(List<ActionCard> actionCards)
     {
-        for (int i = 0; i < actionCards.Count; i++)
-        {
-            AbilitieManager.instance.AssignAbilitie(actionCards[i], i);
-        }
+        // DEPRECATED
+        // for (int i = 0; i < actionCards.Count; i++)
+        // {
+        //     AbilitieManager.instance.AssignAbilitie(actionCards[i], i);
+        // }
+        
+        AbilitieManager.instance.AddAbilities(actionCards);
     }
 
     public void StartRound(int i)

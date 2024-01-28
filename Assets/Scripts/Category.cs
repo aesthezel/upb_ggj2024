@@ -7,10 +7,3 @@ public class Category : ScriptableObject
     public Category AdjecentCategory;
     public Color color;
 }
-
-public enum CategoryOrder
-{
-    First,
-    Second,
-    Third
-}

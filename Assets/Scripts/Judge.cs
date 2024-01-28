@@ -1,14 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName ="New Judge", menuName = "Scriptable Objects/Judge")]
 public class Judge : ScriptableObject
 {
-
     public string judgeName;
-
-    public Category baseCategorie;
-
+    public Category baseCategory;
     public Sprite sprite;
-
 }
