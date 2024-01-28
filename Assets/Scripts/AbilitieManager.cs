@@ -8,11 +8,16 @@ public class AbilitieManager : MonoBehaviour
     public static AbilitieManager instance;
 
     public UnityEvent<ActionCardBundle[]> OnAbilitiesBundleChanged;
+    
     public Action<int, ActionCard> OnAbilitieChanged;
 
     public Action<ActionCard> OnActionPerformAnim, OnActionPerformSpawn, OnActionPerformRagdoll;
+    
+    public UnityEvent<int, ActionCard[]> OnAllActionsUsed;
 
     public GameObject Player;
+    
+    private int _round;
 
     private void Awake()
     {
@@ -64,8 +69,6 @@ public class AbilitieManager : MonoBehaviour
             counterID++;
         }
         
-        Debug.Log($"Configurado el bundle! {bundle.Count}");
-        
         AbilitiesChanged(bundle.ToArray());
     }
     private void AbilitiesChanged(ActionCardBundle[] bundle)
@@ -77,16 +80,22 @@ public class AbilitieManager : MonoBehaviour
     {
         switch (actionCard.cardType) {
             case ActionCard.CardType.animation:
-                Debug.Log("Entro");
-                if (OnActionPerformAnim != null) OnActionPerformAnim(actionCard);
+                OnActionPerformAnim?.Invoke(actionCard);
                 break;
             case ActionCard.CardType.spawner: 
-                if (OnActionPerformSpawn != null) OnActionPerformSpawn(actionCard);
+                OnActionPerformSpawn?.Invoke(actionCard);
                 break;
             case ActionCard.CardType.ragdoll:
-                if (OnActionPerformRagdoll!= null) OnActionPerformRagdoll(actionCard);
+                OnActionPerformRagdoll?.Invoke(actionCard);
                 break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
+    }
+
+    public void AllAbilitiesUsed(ActionCard[] cards)
+    {
+        OnAllActionsUsed?.Invoke(GameManager.instance.RoundNumber, cards);
     }
 }
 

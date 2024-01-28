@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,12 +13,15 @@ public class ActionSlot : MonoBehaviour
     [SerializeField] Image sprite;
     [SerializeField] Category category;
     [SerializeField] ActionCard actionCard;
-    private bool _isPerformed;
+    
+    public bool IsPerformed { get; private set; }
+
+    public event Action<ActionCard> OnUsed;
 
     public void ChangeAbility(int id, ActionCard actionCard)
     {
         if (id != this.id) return;
-        _isPerformed = false;
+        IsPerformed = false;
         this.actionCard = actionCard;
         nameCardDisplay.text = this.actionCard.name;
         nameCard.text = actionCard.actionName;
@@ -29,13 +33,15 @@ public class ActionSlot : MonoBehaviour
 
     public void PerformAction()
     {
-        if (_isPerformed) return;
+        if (IsPerformed) return;
         if (actionCard == null) return;
         
-        _isPerformed = true;
+        IsPerformed = true;
         AbilitieManager.instance.AbilitieUsed(actionCard);
         GameManager.instance.accumulatedPoints += actionCard.points;
         GameManager.instance.ActualizePoints();
+        
+        OnUsed?.Invoke(actionCard);
     }
 
 }

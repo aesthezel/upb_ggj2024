@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 2914535013705740075}
   - component: {fileID: 1663155349771484604}
   m_Layer: 5
-  m_Name: Slot
+  m_Name: ActionSlot
   m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
