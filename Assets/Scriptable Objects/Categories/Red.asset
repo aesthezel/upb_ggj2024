@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Red
   m_EditorClassIdentifier: 
   CategoryName: Absurdo
+  AdjecentCategory: {fileID: 11400000, guid: 86cbaa94467897a44a93d6fa40b53b24, type: 2}
   color: {r: 0.9622642, g: 0.13616933, b: 0.13616933, a: 1}

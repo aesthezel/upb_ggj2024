@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Bailar
   m_EditorClassIdentifier: 
   actionName: La llamada
-  category: {fileID: 0}
+  category: {fileID: 11400000, guid: 41e8a621d3d27d247ae894b73609dff8, type: 2}
   points: 2
-  animation: {fileID: 0}
+  animation: {fileID: -4791504522942941401, guid: 69d1a0fe8c03eba45ab79a3d75416940,
+    type: 3}
   sprite: {fileID: 21300000, guid: 742f9773c0029f147b43de057a2ca31a, type: 3}
   card: {fileID: 21300000, guid: 3381904dc67639c4ca049603289ea230, type: 3}
   description: "Despu\xE9s de dos botellas de guaro, a\xFAn no sabes bailar"
