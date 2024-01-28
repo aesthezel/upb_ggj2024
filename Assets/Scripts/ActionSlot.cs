@@ -1,61 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static ActionCard;
 
 public class ActionSlot : MonoBehaviour
 {
-
     public int id;
-
     [SerializeField] TextMeshProUGUI nameCard;
-
     [SerializeField] TextMeshProUGUI points;
-
     [SerializeField] TextMeshProUGUI description;
-
+    [SerializeField] private TMP_Text nameCardDisplay;
     [SerializeField] Image sprite;
-
-    [SerializeField] Image Card;
-
-    [SerializeField] Categories categorie;
-
+    [SerializeField] Category category;
     [SerializeField] ActionCard actionCard;
+    
+    public bool IsPerformed { get; private set; }
 
-    public void Start()
+    public event Action<ActionCard> OnUsed;
+
+    public void ChangeAbility(int id, ActionCard actionCard)
     {
-        AbilitieManager.instance.OnAbilitieChanged += ChangeAbilitie;
-    }
-
-    public void ChangeAbilitie(int id, ActionCard actionCard)
-    {
-
-        Debug.Log("Entro a el slot");
-
-        if (id == this.id)
-        {
-            Debug.Log("Abilitie Changed");
-            nameCard.text = actionCard.actionName;
-            points.text = actionCard.points.ToString();
-            description.text = actionCard.description;
-            Card.sprite = actionCard.card;
-            sprite.sprite = actionCard.sprite;
-            categorie = actionCard.category;
-            this.actionCard = actionCard;
-        }
+        if (id != this.id) return;
+        IsPerformed = false;
+        this.actionCard = actionCard;
+        nameCardDisplay.text = this.actionCard.name;
+        nameCard.text = actionCard.actionName;
+        points.text = actionCard.points.ToString();
+        description.text = actionCard.description;
+        sprite.sprite = actionCard.sprite;
+        category = actionCard.category;
     }
 
     public void PerformAction()
     {
-        if (this.actionCard != null)
-        {
-            AbilitieManager.instance.AbilitieUsed(actionCard);
-
-            GameManager.instance.accumulatedPoints += actionCard.points;
-            GameManager.instance.ActualizePoints();
-        }
+        if (IsPerformed) return;
+        if (actionCard == null) return;
+        
+        IsPerformed = true;
+        AbilitieManager.instance.AbilitieUsed(actionCard);
+        GameManager.instance.accumulatedPoints += actionCard.points;
+        GameManager.instance.ActualizePoints();
+        
+        OnUsed?.Invoke(actionCard);
     }
 
 }

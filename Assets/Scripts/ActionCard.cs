@@ -10,7 +10,7 @@ public class ActionCard : ScriptableObject
 
     public string actionName;
 
-    public Categories category;
+    public Category category;
 
     public int points;
 

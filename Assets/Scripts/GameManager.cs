@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using TMPro;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,8 +20,6 @@ public class GameManager : MonoBehaviour
 
     public Action<int> OnRoundStart;
 
-    public Action<int, ActionCard> OnNewAbilitie;
-
     public List<ActionCard> Cards = new List<ActionCard>();
 
     public List<ActionCard> ChoseenCardsList = new List<ActionCard>();
@@ -32,14 +31,15 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-
-        OnIntermission += Selectedcards;
+        //OnIntermission += Selectedcards;
 
         switch (RoundNumber)
         {
             case 1:
                 UnityEngine.Debug.Log("Entro a intermision");
                 if (OnIntermission != null) OnIntermission(3);
+                Selectedcards(3);
+                RoundUI.text = RoundNumber.ToString();
                 break;
             case 2:
                 if (OnIntermission != null) OnIntermission(4);
@@ -48,8 +48,6 @@ public class GameManager : MonoBehaviour
                 if (OnIntermission != null) OnIntermission(5);
                 break;
         }
-
-        
         
         if (RoundNumber < 3) RoundNumber++;
     }
@@ -85,20 +83,17 @@ public class GameManager : MonoBehaviour
         AddAbilities(choosenCards);
         //-----------------------------------------------------------------------------------------------
         ChoseenCardsList = choosenCards;
-
-        UnityEngine.Debug.Log(choosenCards);
     }
 
     public void AddAbilities(List<ActionCard> actionCards)
     {
-        for (int i = 0; i < actionCards.Count; i++)
-        {
-            
-                OnNewAbilitie.Invoke(i + 1, actionCards[i]);
-                UnityEngine.Debug.Log("AbilitieAdded" + actionCards[i]);
-            
-            
-        }
+        // DEPRECATED
+        // for (int i = 0; i < actionCards.Count; i++)
+        // {
+        //     AbilitieManager.instance.AssignAbilitie(actionCards[i], i);
+        // }
+        
+        AbilitieManager.instance.AddAbilities(actionCards);
     }
 
     public void StartRound(int i)
