@@ -15,8 +15,8 @@ MonoBehaviour:
   actionName: Alt f4
   category: {fileID: 11400000, guid: 1d2c7839a983d884c80c1eeb03fa8231, type: 2}
   points: 4
-  animation: {fileID: 7400000, guid: 844388758cb33714e915038174adcdb2, type: 2}
-  sprite: {fileID: 0}
+  animation: {fileID: 7400000, guid: b5bc1628e5e39984f905e35a71f8035f, type: 2}
+  sprite: {fileID: 21300000, guid: d436eff9359e9f94fb979b6b712db819, type: 3}
   card: {fileID: 21300000, guid: 01969d3257584024d80a6ad675b25cba, type: 3}
   description: "Un cl\xE1sico de los videojuegos"
   cardType: 0
