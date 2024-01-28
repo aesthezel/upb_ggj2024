@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
-
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName ="New Card", menuName = "ActionCards")]
 public class ActionCard : ScriptableObject
@@ -18,6 +17,10 @@ public class ActionCard : ScriptableObject
     public Animation animation;
 
     public Sprite sprite;
+
+    public Sprite card;
+
+    public string description;
 
     public enum CardType
     {
