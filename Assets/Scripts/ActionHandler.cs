@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace DefaultNamespace
 {
@@ -9,6 +10,8 @@ namespace DefaultNamespace
     {
         public ActionSlot[] Slots;
         private List<ActionCard> _usedSlot = new();
+
+        public UnityEvent<ActionCard> OnSlotUsed;
 
         private void Start()
         {
@@ -29,10 +32,9 @@ namespace DefaultNamespace
         private void SlotUsed(ActionCard card)
         {
             _usedSlot.Add(card);
-
             var allPerformed = Slots.Where(slot => slot.gameObject.activeInHierarchy).All(slot => slot.IsPerformed);
             
-            Debug.Log($"Slot used! {allPerformed}");
+            OnSlotUsed?.Invoke(card);
             
             if (!allPerformed) return; 
             Debug.Log("Todas las acciones han sido usadas!");

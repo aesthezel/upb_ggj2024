@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    public ActionCard actionCard;
-
     public Animator animator;
-
     public GameObject spawnObject;
-
 
     public void Start()
     {
@@ -20,7 +16,7 @@ public class PlayerManager : MonoBehaviour
 
     public void performAnimation(ActionCard actionCard)
     {
-        Debug.Log("Animacion");
+        animator.Play(actionCard.animation.name);
     }
 
     public void performSpawn(ActionCard actionCard)

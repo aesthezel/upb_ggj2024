@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Purple
   m_EditorClassIdentifier: 
   CategoryName: Shitposting
+  AdjecentCategory: {fileID: 11400000, guid: 41e8a621d3d27d247ae894b73609dff8, type: 2}
   color: {r: 0.6675254, g: 0.05480236, b: 0.6754716, a: 1}

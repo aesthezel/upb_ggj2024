@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Blue
   m_EditorClassIdentifier: 
   CategoryName: Golpe
+  AdjecentCategory: {fileID: 11400000, guid: 5a1b25e681780d6419f88fd18d7ec787, type: 2}
   color: {r: 0.034225564, g: 0.47818452, b: 0.9547169, a: 1}

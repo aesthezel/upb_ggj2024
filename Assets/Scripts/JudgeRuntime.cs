@@ -18,9 +18,16 @@ public class JudgeRuntime : MonoBehaviour
     public int EvaluatePoint(IEnumerable<ActionCard> cards)
     {
         var points = CategoryFormula.CalculateCombo(cards);
-        if (cards.Any(card => card.category == JudgeSO.baseCategory))
+        
+        Debug.Log(points);
+        
+        if (cards.Any(card => card.category == JudgeSO.baseCategory)) // TODO: Agregar el color morado si lo tiene en ese momento el juez
         {
-            points *= (int) Mathf.Ceil(points * 1.2f);
+            points = (int)(points * 1.2f);
+        }
+        else
+        {
+            points = (int)(points * 0.8f);
         }
 
         PointText.text = points.ToString();
