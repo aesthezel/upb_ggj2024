@@ -13,8 +13,6 @@ public class AbilitieManager : MonoBehaviour
 
     public GameObject Player;
 
-    [SerializeField] ActionCard testAction;
-
     private void Awake()
     {
         instance = this;
@@ -64,14 +62,5 @@ public class AbilitieManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown("space"))
-        {
-            AssignAbilitie(testAction, 1);
-        }
-    }
-
-    
 
 }

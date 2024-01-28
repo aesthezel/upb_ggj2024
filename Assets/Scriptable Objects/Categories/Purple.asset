@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f12414f5b03e0141b828b9bb7390543, type: 3}
-  m_Name: Dab
+  m_Script: {fileID: 11500000, guid: 620998ac740962f4294b0ee5dba91747, type: 3}
+  m_Name: Purple
   m_EditorClassIdentifier: 
-  actionName: Chuchiento
-  category: {fileID: 0}
-  points: 0
-  animation: {fileID: 0}
-  sprite: {fileID: 0}
-  spawnObject: {fileID: 0}
+  CategoryName: Shitposting
+  color: {r: 0.6675254, g: 0.05480236, b: 0.6754716, a: 1}
