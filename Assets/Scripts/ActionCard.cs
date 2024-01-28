@@ -14,7 +14,7 @@ public class ActionCard : ScriptableObject
 
     public int points;
 
-    public Animation animation;
+    public AnimationClip animation;
 
     public Sprite sprite;
 

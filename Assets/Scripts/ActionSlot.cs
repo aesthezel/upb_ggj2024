@@ -10,12 +10,12 @@ public class ActionSlot : MonoBehaviour
     [SerializeField] TextMeshProUGUI points;
     [SerializeField] TextMeshProUGUI description;
     [SerializeField] private TMP_Text nameCardDisplay;
+    [SerializeField] private Image dotActionColor;
     [SerializeField] Image sprite;
     [SerializeField] Category category;
     [SerializeField] ActionCard actionCard;
     
     public bool IsPerformed { get; private set; }
-
     public event Action<ActionCard> OnUsed;
 
     public void ChangeAbility(int id, ActionCard actionCard)
@@ -24,6 +24,7 @@ public class ActionSlot : MonoBehaviour
         IsPerformed = false;
         this.actionCard = actionCard;
         nameCardDisplay.text = this.actionCard.name;
+        dotActionColor.color = this.actionCard.category.color;
         nameCard.text = actionCard.actionName;
         points.text = actionCard.points.ToString();
         description.text = actionCard.description;
