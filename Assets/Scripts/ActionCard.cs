@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -18,13 +19,17 @@ public class ActionCard : ScriptableObject
 
     public Sprite sprite;
 
-    public enum cardType
+    public enum CardType
     {
         animation,
         spawner,
         ragdoll,
     }
 
+    public CardType cardType;
+
     public GameObject spawnObject;
+
+    
 
 }
