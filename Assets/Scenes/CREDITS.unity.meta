@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/CREDITS.unity.meta
 guid: 9dc1b552dd5fd6e4db1d69855a9c9943
+========
+guid: c8e080d7b6187c54fb789d0fa022a322
+>>>>>>>> final:Assets/Scenes/EscenaFinal_Prob.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
