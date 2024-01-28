@@ -31,5 +31,18 @@ namespace DefaultNamespace
             
             comboDots.Add(comboDotInstance);
         }
+
+        public void ResetComboResults()
+        {
+            comboDots.Clear();
+            actionCardsPlayed.Clear();
+            comboResults.Clear();
+
+            var childrens = transform.GetComponentsInChildren<GameObject>();
+            foreach (var child in childrens)
+            {
+                Destroy(child);
+            }
+        }
     }
 }
