@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionName: La llamada
   category: {fileID: 0}
-  points: 0
+  points: 2
   animation: {fileID: 0}
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 742f9773c0029f147b43de057a2ca31a, type: 3}
+  card: {fileID: 21300000, guid: 3381904dc67639c4ca049603289ea230, type: 3}
+  description: "Despu\xE9s de dos botellas de guaro, a\xFAn no sabes bailar"
+  cardType: 0
   spawnObject: {fileID: 0}
