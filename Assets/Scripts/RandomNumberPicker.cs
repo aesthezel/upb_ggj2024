@@ -10,6 +10,10 @@ public class RandomNumberPicker : MonoBehaviour
     [SerializeField] private string CardB;
     [SerializeField] private string CardC;
 
+    [SerializeField] private Sprite CardASP;
+    [SerializeField] private Sprite CardBSP;
+    [SerializeField] private Sprite CardCSP;
+
     public TextMeshProUGUI CardAText;
     public TextMeshProUGUI CardBText;
     public TextMeshProUGUI CardCText;
@@ -73,6 +77,8 @@ public class RandomNumberPicker : MonoBehaviour
         CardAText.SetText(CardA);
         CardBText.SetText(CardB);
         CardCText.SetText(CardC);
+
+
 
 
 
