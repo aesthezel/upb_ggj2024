@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AnimTester : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class AnimTester : MonoBehaviour
             nameOfAction = "Backflip";
             AnimatorTest.SetBool(nameOfAction, true);
             StartCoroutine(WaitSeconds(3, AnimatorTest, "Backflip"));
+            AudioManager.instance.PlayOneshotSFX(AudioManager.AudioSamples.flyingTomato);
         }
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
@@ -30,6 +32,7 @@ public class AnimTester : MonoBehaviour
             nameOfAction = "RagDoll";
             AnimatorTest.SetBool(nameOfAction, true);
             StartCoroutine(WaitSeconds(3, AnimatorTest, "RagDoll"));
+            AudioManager.instance.PlayOneshotSFX(AudioManager.AudioSamples.hittingTheFlor);
         }
         if (Input.GetKeyDown(KeyCode.Keypad3))
         {
@@ -37,6 +40,8 @@ public class AnimTester : MonoBehaviour
             nameOfAction = "Iron";
             AnimatorTest.SetBool(nameOfAction, true);
             StartCoroutine(WaitSeconds(3, AnimatorTest, "Iron"));
+            AudioManager.instance.PlayOneshotSFX(AudioManager.AudioSamples.fallingAnvil);
+            AudioManager.instance.SFXSource.PlayDelayed(2);
         }
         if (Input.GetKeyDown(KeyCode.Keypad4))
         {
@@ -44,6 +49,7 @@ public class AnimTester : MonoBehaviour
             nameOfAction = "Dab";
             AnimatorTest.SetBool(nameOfAction, true);
             StartCoroutine(WaitSeconds(3, AnimatorTest, "Dab"));
+            AudioManager.instance.PlayOneshotSFX(AudioManager.AudioSamples.dabHorns);
         }
         if (Input.GetKeyDown(KeyCode.Keypad5))
         {
