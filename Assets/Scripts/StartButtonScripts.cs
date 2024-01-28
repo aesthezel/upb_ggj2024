@@ -17,6 +17,11 @@ public class StartButtonScripts : MonoBehaviour
         Debug.Log("Has salido de app");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene(3);
+    }
+
 
 
 }

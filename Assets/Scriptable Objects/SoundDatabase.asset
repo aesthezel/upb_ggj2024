@@ -39,7 +39,7 @@ MonoBehaviour:
   ActionSelected3: {fileID: 8300000, guid: d6e01b7e282f6bb40a6e4cdeac86334b, type: 3}
   MouseOver: {fileID: 8300000, guid: 95454b89186d95649b35ca49a8c7d358, type: 3}
   ButtonSFX: {fileID: 8300000, guid: d929ea543dc0c0945ae61e3cafe851c4, type: 3}
-  GameOverJingle: {fileID: 0}
+  GameOverJingle: {fileID: 8300000, guid: 74952315f2288144cadf7923a034b82e, type: 3}
   WinningJingle: {fileID: 8300000, guid: 63f47b0a2803827418acca360c1874bd, type: 3}
   ElevatorMusic: {fileID: 8300000, guid: 8191ff215cb58a142b7bf7da9f834005, type: 3}
   DefaultSound: {fileID: 8300000, guid: f1d077c8f2fdd2c46b4c265a0c298ff2, type: 3}

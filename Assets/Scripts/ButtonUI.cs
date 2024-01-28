@@ -15,6 +15,8 @@ public class ButtonUI : MonoBehaviour
     public bool Hop = true;
 
     public GameObject MainCanva;
+    public GameObject Options;
+    public GameObject TEMPBUTTON;
 
     public GameObject CardToShowA;
     public GameObject CardToShowB;
@@ -149,6 +151,13 @@ public class ButtonUI : MonoBehaviour
     {
         round++;
         TextoRonda.text = round.ToString();
+    }
+
+    public void Prepare()
+    {
+        Options.SetActive(true);
+        TEMPBUTTON.SetActive(false);
+        
     }
 
 
