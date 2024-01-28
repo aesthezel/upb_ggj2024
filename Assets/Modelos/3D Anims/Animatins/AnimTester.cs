@@ -59,6 +59,22 @@ public class AnimTester : MonoBehaviour
             StartCoroutine(WaitSeconds(4, AnimatorTest, "Dance"));
         }
 
+        if (Input.GetKeyDown(KeyCode.Keypad6))
+        {
+            //Dance DONE
+            nameOfAction = "Toss";
+            AnimatorTest.SetBool(nameOfAction, true);
+            StartCoroutine(WaitSeconds(4, AnimatorTest, "Toss"));
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad7))
+        {
+            //Dance DONE
+            nameOfAction = "Canon Hit";
+            AnimatorTest.SetBool(nameOfAction, true);
+            StartCoroutine(WaitSeconds(4, AnimatorTest, "Canon Hit"));
+        }
+
 
     }
 
