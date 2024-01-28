@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     {
         //OnIntermission += Selectedcards;
 
+        OnRoundStart += Selectedcards;
+
         switch (RoundNumber)
         {
             case 1:
