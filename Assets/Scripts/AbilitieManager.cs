@@ -18,8 +18,16 @@ public class AbilitieManager : MonoBehaviour
         instance = this;
     }
 
-    public void AssignAbilitie(ActionCard actionCard, int abilitieNumber)
+    private void Start()
     {
+        GameManager.instance.OnNewAbilitie += AssignAbilitie;
+    }
+
+    public void AssignAbilitie(int abilitieNumber, ActionCard actionCard)
+    {
+
+        Debug.Log("Entro assign Abilitie");
+
         switch (abilitieNumber)
         {
             case 1:
@@ -42,7 +50,8 @@ public class AbilitieManager : MonoBehaviour
 
     public void AbilitieChanged(int id, ActionCard actionCard)
     {
-        if (OnAbilitieChanged != null) OnAbilitieChanged(id, actionCard);
+        Debug.Log("Entro a abilitie changed");
+        if (OnAbilitieChanged != null) OnAbilitieChanged.Invoke(id, actionCard);
     }
 
     public void AbilitieUsed(ActionCard actionCard)

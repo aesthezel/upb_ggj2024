@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     public Action<int> OnRoundStart;
 
+    public Action<int, ActionCard> OnNewAbilitie;
+
     public List<ActionCard> Cards = new List<ActionCard>();
 
     public List<ActionCard> ChoseenCardsList = new List<ActionCard>();
@@ -38,8 +40,6 @@ public class GameManager : MonoBehaviour
             case 1:
                 UnityEngine.Debug.Log("Entro a intermision");
                 if (OnIntermission != null) OnIntermission(3);
-                Selectedcards(3);
-                RoundUI.text = RoundNumber.ToString();
                 break;
             case 2:
                 if (OnIntermission != null) OnIntermission(4);
@@ -93,7 +93,11 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < actionCards.Count; i++)
         {
-            AbilitieManager.instance.AssignAbilitie(actionCards[i], i);
+            
+                OnNewAbilitie.Invoke(i + 1, actionCards[i]);
+                UnityEngine.Debug.Log("AbilitieAdded" + actionCards[i]);
+            
+            
         }
     }
 

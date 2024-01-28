@@ -31,6 +31,9 @@ public class ActionSlot : MonoBehaviour
 
     public void ChangeAbilitie(int id, ActionCard actionCard)
     {
+
+        Debug.Log("Entro a el slot");
+
         if (id == this.id)
         {
             Debug.Log("Abilitie Changed");
