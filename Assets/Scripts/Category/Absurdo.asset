@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620998ac740962f4294b0ee5dba91747, type: 3}
   m_Name: Absurdo
   m_EditorClassIdentifier: 
-  CategoryName: 
-  color: {r: 0, g: 0, b: 0, a: 0}
+  CategoryName: Absurdo
+  AdjecentCategory: {fileID: 0}
+  color: {r: 1, g: 0, b: 0, a: 1}
