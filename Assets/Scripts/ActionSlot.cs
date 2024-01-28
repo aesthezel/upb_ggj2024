@@ -45,6 +45,7 @@ public class ActionSlot : MonoBehaviour
             AbilitieManager.instance.AbilitieUsed(actionCard);
 
             GameManager.instance.accumulatedPoints += actionCard.points;
+            GameManager.instance.ActualizePoints();
         }
     }
 
