@@ -15,9 +15,9 @@ MonoBehaviour:
   actionName: Lluvia Pesada
   category: {fileID: 11400000, guid: 86cbaa94467897a44a93d6fa40b53b24, type: 2}
   points: 2
-  animation: {fileID: 0}
-  sprite: {fileID: 21300000, guid: 506a62d1b0306694296cd72cb0595287, type: 3}
-  card: {fileID: 0}
+  animation: {fileID: 7400000, guid: 0ca2e635bca7ac340b929a0d96bdcef7, type: 2}
+  sprite: {fileID: 21300000, guid: 7205a45a732404b4aa280c25fa91fbdd, type: 3}
+  card: {fileID: 21300000, guid: 506a62d1b0306694296cd72cb0595287, type: 3}
   description: "Al final, tu vida s\xED fue una caricatura"
   cardType: 0
   spawnObject: {fileID: 0}

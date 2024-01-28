@@ -15,7 +15,7 @@ MonoBehaviour:
   actionName: Pollificacion
   category: {fileID: 11400000, guid: 5a1b25e681780d6419f88fd18d7ec787, type: 2}
   points: 4
-  animation: {fileID: 0}
+  animation: {fileID: 7400000, guid: c3febe6507b44114e8d49ab2a12ec10d, type: 2}
   sprite: {fileID: 21300000, guid: 864cba98778d579499e8883d8680f84b, type: 3}
   card: {fileID: 21300000, guid: 85e4d7b54ee4d0c40beb194855be982e, type: 3}
   description: Directamente del campo a su cara

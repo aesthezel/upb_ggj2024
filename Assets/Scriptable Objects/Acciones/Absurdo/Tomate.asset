@@ -15,8 +15,9 @@ MonoBehaviour:
   actionName: Napolitana
   category: {fileID: 11400000, guid: 5a1b25e681780d6419f88fd18d7ec787, type: 2}
   points: 2
-  animation: {fileID: 0}
-  sprite: {fileID: 0}
+  animation: {fileID: -203655887218126122, guid: babae540ceee50446b7f18fceff7357b,
+    type: 3}
+  sprite: {fileID: 21300000, guid: a295305a9108a954199e5414c58ba647, type: 3}
   card: {fileID: 21300000, guid: 85e4d7b54ee4d0c40beb194855be982e, type: 3}
   description: Que no se pierdan las costumbres
   cardType: 0

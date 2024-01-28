@@ -15,7 +15,8 @@ MonoBehaviour:
   actionName: Vuelta SuperMegaHiperUltraEpica
   category: {fileID: 11400000, guid: 41e8a621d3d27d247ae894b73609dff8, type: 2}
   points: 4
-  animation: {fileID: 0}
+  animation: {fileID: -203655887218126122, guid: ef6bbb04fe9a2e8479de00ca1c9ccb52,
+    type: 3}
   sprite: {fileID: 21300000, guid: 9ef65276dddac4947a923bb86c3f1399, type: 3}
   card: {fileID: 21300000, guid: 3381904dc67639c4ca049603289ea230, type: 3}
   description: No te desarmes como los Lego
