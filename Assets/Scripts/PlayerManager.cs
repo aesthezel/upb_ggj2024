@@ -9,14 +9,13 @@ public class PlayerManager : MonoBehaviour
 
     public void Start()
     {
-        AbilitieManager.instance.OnActionPerformRagdoll += performRagdoll;
-        AbilitieManager.instance.OnActionPerformAnim += performAnimation;
-        AbilitieManager.instance.OnActionPerformSpawn += performSpawn;
+
     }
 
     public void performAnimation(ActionCard actionCard)
     {
         animator.Play(actionCard.animation.name);
+        Debug.Log("animation");
     }
 
     public void performSpawn(ActionCard actionCard)
@@ -24,8 +23,5 @@ public class PlayerManager : MonoBehaviour
         Debug.Log("Spawn");
     }
 
-    public void performRagdoll(ActionCard actionCard)
-    {
-        Debug.Log("Ragdoll");
-    }
+    
 }

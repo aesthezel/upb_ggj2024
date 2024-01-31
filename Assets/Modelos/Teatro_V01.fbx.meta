@@ -3,7 +3,62 @@ guid: 3298ab4986cb580459d4b505f11c42e7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_but02
+    second: {fileID: 2100000, guid: 5aebe8db682fc7246ad76115eb52a394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_but02.003
+    second: {fileID: 2100000, guid: 3a0a797dc72493144a9c3efbbb567ab8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_but02.004
+    second: {fileID: 2100000, guid: 9245f6b54bd43af4e993f6840d37b8af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_but02.005
+    second: {fileID: 2100000, guid: 367c83fd95229fb4eb8af2efd617e743, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_but02.006
+    second: {fileID: 2100000, guid: d918fc8876289e045b8c59d948a03537, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_but02.007
+    second: {fileID: 2100000, guid: 039134ab0fc0b70458c6eeec0cee6a3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_estructure
+    second: {fileID: 2100000, guid: 2858deff6b8ce9142be594cd80746d4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_estructurewall
+    second: {fileID: 2100000, guid: ebbe2653f763cfa4891da8d7e624a438, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_floor
+    second: {fileID: 2100000, guid: 3e78a42f7f0ed48449b032b58ebd073f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_weapon
+    second: {fileID: 2100000, guid: c7c32e6d6228a954fb5fc2d9784b65f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood
+    second: {fileID: 2100000, guid: 8d02ba5e65b296a4c938bcd7d1d9e0a8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -90,7 +145,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.03
+    globalScale: 3
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

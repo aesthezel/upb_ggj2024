@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,11 +8,13 @@ public class AbilitieManager : MonoBehaviour
 {
     public static AbilitieManager instance;
 
+    //[SerializeField] private ActionHandler actionHandler;
+
     public UnityEvent<ActionCardBundle[]> OnAbilitiesBundleChanged;
     
     public Action<int, ActionCard> OnAbilitieChanged;
 
-    public Action<ActionCard> OnActionPerformAnim, OnActionPerformSpawn, OnActionPerformRagdoll;
+    public UnityEvent<ActionCard> OnActionPerformAnim, OnActionPerformSpawn;
     
     public UnityEvent<int, ActionCard[]> OnAllActionsUsed;
 
@@ -22,6 +25,11 @@ public class AbilitieManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start()
+    {
+       // OnAbilitiesBundleChanged?.AddListener(actionHandler.UpdateSlots);
     }
 
     // DEPRECATED
@@ -46,7 +54,7 @@ public class AbilitieManager : MonoBehaviour
     //             break;
     //     }
     // }
-    
+
     // DEPRECATED
     // public void AbilitieChanged(int id, ActionCard actionCard)
     // { 
@@ -84,9 +92,6 @@ public class AbilitieManager : MonoBehaviour
                 break;
             case ActionCard.CardType.spawner: 
                 OnActionPerformSpawn?.Invoke(actionCard);
-                break;
-            case ActionCard.CardType.ragdoll:
-                OnActionPerformRagdoll?.Invoke(actionCard);
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
