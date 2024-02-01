@@ -76,6 +76,7 @@ public class AudioManager : MonoBehaviour
                 PlayMusic(AudioSamples.mainTheme);
                 break;
             case 1:
+                StartCoroutine(StartFadeMixer(Mixer, "ST", FadeTime, TargetVolume));
                 PlayMusic(AudioSamples.BGGameplayMusic);
                 break;
             default:
