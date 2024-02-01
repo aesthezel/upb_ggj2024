@@ -15,8 +15,8 @@ MonoBehaviour:
   actionName: Oh No :(
   category: {fileID: 11400000, guid: 86cbaa94467897a44a93d6fa40b53b24, type: 2}
   points: 4
-  animation: {fileID: -203655887218126122, guid: a1abd9c0f45b0614e8d8ef8cb0b9b8ff,
-    type: 3}
+  cardAudio: 12
+  cardAnimation: Canon Hit
   sprite: {fileID: 21300000, guid: 5fe7c213119ac37429e90713a1f209a1, type: 3}
   card: {fileID: 21300000, guid: 506a62d1b0306694296cd72cb0595287, type: 3}
   description: ARRRR

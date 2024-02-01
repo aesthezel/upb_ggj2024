@@ -15,7 +15,8 @@ MonoBehaviour:
   actionName: Chuchiento
   category: {fileID: 11400000, guid: 1d2c7839a983d884c80c1eeb03fa8231, type: 2}
   points: 2
-  animation: {fileID: 7400000, guid: fab07e9806f7f6840a9ba7b860d8c789, type: 2}
+  cardAudio: 16
+  cardAnimation: Dab
   sprite: {fileID: 21300000, guid: b750977be60e21342aff8185a7bad8c8, type: 3}
   card: {fileID: 21300000, guid: 01969d3257584024d80a6ad675b25cba, type: 3}
   description: "\xBFTanto necesitas pagar la luz?"

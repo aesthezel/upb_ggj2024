@@ -1352,6 +1352,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5813521495844194282, guid: 5b9cfedfd6eda8d4da5f72fa239d00dc,
+        type: 3}
+      propertyPath: FadeTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813521495844194282, guid: 5b9cfedfd6eda8d4da5f72fa239d00dc,
+        type: 3}
+      propertyPath: TargetVolume
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 6486638670016458519, guid: 5b9cfedfd6eda8d4da5f72fa239d00dc,
         type: 3}
       propertyPath: m_Name

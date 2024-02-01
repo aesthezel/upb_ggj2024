@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] SoundDataBank soundDB;
+    [SerializeField] float FadeTime, TargetVolume;
     public SoundDataBank AudioDataBank => soundDB;
     public AudioMixer Mixer;
     public AudioSource SFXSource, musicSource;
@@ -18,6 +20,14 @@ public class AudioManager : MonoBehaviour
         fallingAnvil = 13, anvilHit = 14, hittingTheFlor = 15, dabHorns = 16,flyingTomato = 17,tomatoSplash = 18,
         surpriseChicken = 19,frenchMime = 20, actionSelect1 = 21, actionSelect2 = 22, actionSelect3 = 23, mouseOver = 24,
         buttonSFX = 25, gameOverJingle = 26, winningJingle = 27,elevatorMusic = 28
+    }
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
     private void Awake()
     {
@@ -56,6 +66,21 @@ public class AudioManager : MonoBehaviour
     public void PlayOneshotSFX(AudioSamples sample)
     {
         SFXSource.PlayOneShot(soundDB.GetFromDataBank(sample));
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        switch (scene.buildIndex)
+        {
+            case 0:
+                StartCoroutine(StartFadeMixer(Mixer,"ST", FadeTime, TargetVolume));
+                PlayMusic(AudioSamples.mainTheme);
+                break;
+            case 1:
+                PlayMusic(AudioSamples.BGGameplayMusic);
+                break;
+            default:
+                break;
+        }
     }
     public void PlayMusic(AudioSamples sample)
     {

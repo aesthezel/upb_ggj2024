@@ -13,9 +13,10 @@ public class ActionCard : ScriptableObject
     public Category category;
 
     public int points;
-
-    public AnimationClip animation;
-
+    public AudioManager.AudioSamples cardAudio;
+    //Es importante y obligatorio que este string tenga el mismo nombre del paramentro del animator.
+    public string cardAnimation;
+    
     public Sprite sprite;
 
     public Sprite card;
@@ -26,13 +27,14 @@ public class ActionCard : ScriptableObject
     {
         animation,
         spawner,
-        ragdoll,
+       
     }
 
     public CardType cardType;
 
     public GameObject spawnObject;
 
-    
+   
+
 
 }
